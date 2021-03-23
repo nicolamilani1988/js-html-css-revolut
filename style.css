@@ -21,32 +21,52 @@ ul li{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
+  height: 100px;
 }
 
-#navbar-left{
+#navbar-left,#navbar-right{
   display: flex;
   align-items: center;
   border: 1px solid black;
 }
 
 #navbar-left .img-container>img{
-    width: 50px;
+    width: 30px;
+}
+
+#navbar-left>*{
+  margin-right:50px;
 }
 
 #navbar-right>ul{
   display: flex;
+  align-items: center;
 }
 
 #navbar-right .dropdown-start{
   border: 1px solid red;
-  margin: 10px;
+  margin: 0 25px;
   position: relative;
 }
 
 #navbar-right .dropdown-menu{
   border: 1px solid green;
+  position:absolute;
+  top: 30px;
+  left: -30px;
+}
+
+.dropdown-start.start .dropdown-menu{
+  right: -500px;
+}
+
+.dropdown-start.start .flex-container{
+  display: flex;
+}
+
+.dropdown-start.start .flex-container>div{
+  flex-grow: 1;
 }
 
 .dropdown-start>span:hover{
@@ -59,4 +79,22 @@ ul li{
 
 .show{
   display: block;
+}
+
+#navbar-right ul li button{
+  border-radius: 10px;
+  padding:10px 20px;
+  margin-left: 25px;
+}
+
+#navbar-right ul li:last-child button{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+#navbar-right ul li:nth-child(5) button{
+  background-color: lighgray;
+  color: black;
+  border: 1px solid white;
 }
