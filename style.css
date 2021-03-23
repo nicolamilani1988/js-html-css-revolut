@@ -45,10 +45,6 @@ ul li{
   position: relative;
 }
 
-.dropdown-start:hover{
-  color: black;
-}
-
 #navbar-right .dropdown-menu{
   border: 1px solid green;
 }
