@@ -3,3 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  color: gray;
+}
+
+ul li{
+  list-style: none;
+}
+
+#navbar{
+  background-color: pink;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#navbar-left{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#navbar-left .img-container>img{
+    width: 50px;
+}
+
+#navbar-right>ul{
+  display: flex;
+}
+
+#navbar-right .dropdown-start{
+  border: 1px solid red;
+  margin: 10px;
+  position: relative;
+}
+
+.dropdown-start:hover{
+  color: black;
+}
+
+#navbar-right .dropdown-menu{
+  border: 1px solid green;
+}
+
+.hide{
+  visibility: hidden;
+}
