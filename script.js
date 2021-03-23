@@ -2,27 +2,25 @@ function singleHover(){
   $(".dropdown-start").hover(function(){
     var hoverStart = $(this);
     var hoverMenu = hoverStart.find(".dropdown-menu");
-    hoverMenu.removeClass("hide");
+    $(".dropdown-menu.show").removeClass("show");
+    hoverMenu.addClass("show");
   })
 
 }
 
-
-function showMenu(){
-  console.log("hoooover");
-  $(".dropdown-menu").removeClass("hide");
-}
-
 function removeMenu (){
 
-    $(".dropdown-menu").addClass("hide");
-
-
+  // $(".dropdown-menu.show").click(function(e){
+  //   e.stopPropagation();
+  // });
+  $("header").click(function(){
+    $(".dropdown-menu.show").toggleClass("show");
+  })
 }
 
 function init(){
   singleHover();
-  // $("header").click(removeMenu);
+  removeMenu();
 }
 
 $(document).ready(init);

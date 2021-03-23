@@ -49,6 +49,14 @@ ul li{
   border: 1px solid green;
 }
 
+.dropdown-start>span:hover{
+  color: black;
+}
+
 .hide{
-  visibility: hidden;
+  display: none;
+}
+
+.show{
+  display: block;
 }
